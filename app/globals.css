@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
-*{
-  font-family: Outfit;
+.grid-template-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@theme {
+  /* --- FONTS --- */
+  --font-Outfit: Outfit, sans-serif;
+  --font-Ovo: Ovo, serif;
+
+  /* --- COLORS --- */
+  --color-lighthover: #fcf4ff;
+  --color-darkhover: #2a004a;  /* Dark mode hover color */
+  --color-darkTheme: #11001F;  /* Main dark mode background */
+
+  /* --- BOX SHADOWS --- */
+  /* Usage: shadow-black or shadow-white */
+  --shadow-black: 4px 4px 0 #000; 
+  --shadow-white: 4px 4px 0 #fff;
 }
