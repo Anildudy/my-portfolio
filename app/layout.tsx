@@ -12,7 +12,7 @@ const ovo = Ovo({
 
 export const metadata: Metadata = {
   title: "Personal Portfolio app",
-  description: "Personal Portfoliol",
+  description: "Personal Portfolio",
 };
 
 export default function RootLayout({
@@ -21,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased`}
+        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hiddden`}
       >
         {children}
       </body>
