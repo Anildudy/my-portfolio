@@ -20,3 +20,23 @@
   --shadow-black: 4px 4px 0 #000; 
   --shadow-white: 4px 4px 0 #fff;
 }
+
+/* 1. FORCE CLASS-BASED DARK MODE */
+/* This overrides the default "media" strategy so you can toggle it manually */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. GLOBAL BASE STYLES */
+body {
+  /* Default (Light Mode) */
+  background-color: white;
+  color: #1f2937; /* gray-800 */
+  
+  /* Smooth Fade Transition */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 3. DARK MODE BODY OVERRIDE */
+.dark body {
+  background-color: var(--color-darkTheme);
+  color: white;
+}
