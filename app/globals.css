@@ -12,12 +12,12 @@
 
   /* --- COLORS --- */
   --color-lighthover: #fcf4ff;
-  --color-darkhover: #2a004a;  /* Dark mode hover color */
-  --color-darkTheme: #11001F;  /* Main dark mode background */
+  --color-darkhover: #2a004a; /* Dark mode hover color */
+  --color-darkTheme: #11001f; /* Main dark mode background */
 
   /* --- BOX SHADOWS --- */
   /* Usage: shadow-black or shadow-white */
-  --shadow-black: 4px 4px 0 #000; 
+  --shadow-black: 4px 4px 0 #000;
   --shadow-white: 4px 4px 0 #fff;
 }
 
@@ -30,9 +30,11 @@ body {
   /* Default (Light Mode) */
   background-color: white;
   color: #1f2937; /* gray-800 */
-  
+
   /* Smooth Fade Transition */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* 3. DARK MODE BODY OVERRIDE */
