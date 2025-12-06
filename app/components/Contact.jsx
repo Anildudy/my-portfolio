@@ -3,7 +3,7 @@ import Image from "next/image";
 import { assets } from "@/assets/assets";
 import { motion } from "motion/react";
 
-const Contact = () => {
+const Contact = ({ isDarkMode }) => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
