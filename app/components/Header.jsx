@@ -30,7 +30,7 @@ const Header = ({ isDarkMode }) => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-3x1 sm:text-6x1 lg:text-[66px] font-Ovo"
       >
-        Full Stack Web Developer based in Pune
+        Full Stack Developer based in Pune
       </motion.h1>
 
       <motion.p
