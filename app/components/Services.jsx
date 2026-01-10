@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const Services = ({ isDarkMode }) => {
   return (
     <motion.div
-      id="Services"
+      id="services"
       className="w-full px-[12%] py-10 scroll-mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -39,7 +39,7 @@ const Services = ({ isDarkMode }) => {
         transition={{ delay: 0.7, duration: 0.5 }}
       >
         I am a fullstack engineer with 3 years of experience from companies like
-        barclays and finfactor
+        Barclays and Finfactor
       </motion.p>
 
       <motion.div

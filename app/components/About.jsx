@@ -11,13 +11,13 @@ const About = ({ isDarkMode }) => {
       className="w-full px-[12%] py-10 scroll-mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duation: 1 }}
+        transition={{ duration: 1 }}
     >
       <motion.h4
         className="text-center mb-2 text-lg font-ovo"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duation: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
         {" "}
         Introduction{" "}
@@ -27,7 +27,7 @@ const About = ({ isDarkMode }) => {
         className="text-center text-5xl font-ovo"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duation: 0.5, deplay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         {" "}
         About Me{" "}
@@ -37,13 +37,13 @@ const About = ({ isDarkMode }) => {
         className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duation: 0.8 }}
+        transition={{ duration: 0.8 }}
       >
         <motion.div
           className="w-64 sm:w-80 rounded-3xl max-w-none"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duation: 0.5, deplay: 0.6 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
         >
           <Image
             src={assets.profile_img}
@@ -55,20 +55,20 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duation: 0.6, deplay: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <p className="mb-10 mx-w-2xl font-ovo">
+          <p className="mb-10 max-w-2xl font-ovo">
             {" "}
-            I am an exprienced fullstack developer with more than 3 years of
-            experience in the field. Thorughout my carrer i had the privilage of
-            working with prestigous organization's like barclays and finfactor
+            I am an experienced fullstack developer with more than 3 years of
+            experience in the field. Throughout my career I had the privilege of
+            working with prestigious organizations like Barclays and Finfactor
             contributing to their success and growth.
           </p>
           <motion.ul
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duation: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <motion.li
@@ -97,7 +97,7 @@ const About = ({ isDarkMode }) => {
             className="my-6 text-gray-700 font-ovo dark:text-white/80"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duation: 0.5, delay: 1.3 }}
+            transition={{ duration: 0.5, delay: 1.3 }}
           >
             {" "}
             Tools I Use{" "}
@@ -107,7 +107,7 @@ const About = ({ isDarkMode }) => {
             className="flex items-center gap-3 sm:gap-5"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duation: 0.6, delay: 1.5 }}
+            transition={{ duration: 0.6, delay: 1.5 }}
           >
             {toolsData.map((tool, index) => (
               <motion.li

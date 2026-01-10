@@ -5,7 +5,7 @@ import { assets } from "@/assets/assets";
 
 const Header = ({ isDarkMode }) => {
   return (
-    <div className="w-11/12 mx-w-3xl text-center mx-auto h-screen flex flex flex-col items-center justify-center gap-4">
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex flex-col items-center justify-center gap-4">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -18,7 +18,7 @@ const Header = ({ isDarkMode }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="flex items-end gap-2 text-x1 md:text-2x1 mb-3 font-Ovo"
+        className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo"
       >
         Hi! I am Anil Dudy
         <Image src={assets.hand_icon} alt="" className="w-6" />
@@ -28,7 +28,7 @@ const Header = ({ isDarkMode }) => {
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="text-3x1 sm:text-6x1 lg:text-[66px] font-Ovo"
+        className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo"
       >
         Full Stack Developer based in Pune
       </motion.h1>
@@ -37,7 +37,7 @@ const Header = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
-        className="mx-w-2x1 mx-auto font-Ovo"
+        className="max-w-2xl mx-auto font-Ovo"
       >
         I am a fullstack developer with more than 3 years of experience in
         companies like Barclays and Finfactor.

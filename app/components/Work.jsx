@@ -52,7 +52,7 @@ const Work = ({ isDarkMode }) => {
           <motion.div
             key={index}
             style={{ backgroundImage: `url(${project.bgImage})` }}
-            className="aspect-square bg-no-repeate bg-cover bg-center rounded-lg relative cursor-pointer group"
+            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >

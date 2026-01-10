@@ -72,7 +72,7 @@ const Contact = ({ isDarkMode }) => {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.5 }}
         onSubmit={onSubmit}
-        className="mx-w-2xl mx-auto"
+        className="max-w-2xl mx-auto"
       >
         <div className="grid grid-template-auto gap-6 mt-10 mb-8">
           <motion.input
@@ -80,7 +80,7 @@ const Contact = ({ isDarkMode }) => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.1, duration: 0.6 }}
             type="text"
-            placeholder="Enter you name"
+            placeholder="Enter your name"
             required
             name="name"
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkhover/30 dark:border-white/90"
